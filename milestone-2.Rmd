@@ -1,0 +1,24 @@
+---
+title: "Milestone Two"
+author: "Samuel Lowry"
+date: "2/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(foreign)
+```
+
+```{r summary}
+#I uses read.dta from the foreign package in order to read in the summary data.
+data <- read.dta(file = "raw_data/dataverse_files/caughey_warshaw_summary.dta") 
+
+#I then ran a summary
+summary(data)
+```
+
+I loaded in the summary data from the dataverse and then ran summary() on it per the milstone instructions. 
+
+<a href = "https://github.com/SamuelLowry/gov1006-milestone-2"> Link to my repo. </a> 
